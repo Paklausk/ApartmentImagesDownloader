@@ -1,0 +1,19 @@
+﻿<Window x:Class="ApartmentImagesDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApartmentImagesDownloader"
+        mc:Ignorable="d"
+        Title="Apartment images downloader" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="277*"/>
+            <ColumnDefinition Width="515*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Url containing images:" HorizontalAlignment="Left" Margin="50,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.018,0.508"/>
+        <TextBox x:Name="UrlBox" Height="48" Margin="50,100,50,0" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="100" Grid.ColumnSpan="2"/>
+        <Button x:Name="GetImagesButton" Content="Get images" HorizontalAlignment="Center" Margin="77.307,167,354,0" VerticalAlignment="Top" Width="84" Height="37" Click="GetImagesButton_Click" RenderTransformOrigin="0.559,0.518" Grid.Column="1"/>
+
+    </Grid>
+</Window>
